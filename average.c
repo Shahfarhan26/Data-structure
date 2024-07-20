@@ -19,7 +19,7 @@ float avg(int arr1[],int n){
     int sum = 0;
     for (int i = 0; i <= n; i++)
     {
-        sum = sum + i;
+        sum = sum + arr1[i];
     }
     return (sum/n);
 }
@@ -31,6 +31,6 @@ int main() {
     parr(arr1, n);
     float x;
     x = avg(arr1,n);
-    printf("the average of all the elements in the array = %0.3f\n",x);
+    printf("the average of all the elements in the array = %8.2f\n",x);
     return 0;
 }
